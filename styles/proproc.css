@@ -736,6 +736,10 @@
   text-decoration-line: none;
 }
 
+#contact {
+  margin-left: 72px;
+}
+
 #contact h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -755,6 +759,10 @@
   text-decoration-line: none;
 }
 
+#contact ul {
+  list-style: none;
+}
+
 #llc {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -768,6 +776,12 @@
 
 .about_contact {
   margin-left: 596px;
+  display: flex;
+  margin-top: 51px;
+}
+
+.paddiing {
+  padding-top: 12px;
 }
 
 *, *:before, *:after {

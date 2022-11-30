@@ -766,6 +766,10 @@
   padding-bottom: 16px;
 }
 
+.about_contact {
+  margin-left: 596px;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -795,7 +799,7 @@ body:after {
   top: 50%;
   width: auto;
   height: 90px;
-  margin-top: -420px;
+  margin-top: -45px;
   background: #fff;
   border-radius: 5px;
   transform: translate3d(-50%, 0, 0);

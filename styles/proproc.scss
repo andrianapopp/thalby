@@ -807,6 +807,9 @@
   color: #FFFFFF;
   padding-bottom: 16px;
 }
+.about_contact{
+  margin-left: 596px;
+}
 
 
 
@@ -828,8 +831,7 @@ html, body {
   height: 35%;
 }
 
-$lightBlue: darken(#EAFBFF, 50%);
-$darkBlue: #208FF9;
+
 
 body {
   &:before,
@@ -837,11 +839,11 @@ body {
     content: "";
     display: block;
     height: 100%;
-    background: $lightBlue;
+    background: white;
   }
 
   &:after {
-    background: $darkBlue;
+    background: white;
   }
 }
 
@@ -932,7 +934,7 @@ $textCub: cubic-bezier(.48,.43,.7,2.5);
     cursor: pointer;
 
     &:hover {
-      color: $lightBlue;
+      color: black;
     }
 
     &-text {
@@ -976,7 +978,7 @@ $textCub: cubic-bezier(.48,.43,.7,2.5);
       width: $lineW;
       height: $lineH;
       border-radius: 2px;
-      background: #096DD3;
+      background: black;
       transform-origin: 50% 50%;
       transition: transform $navAT $cub, background-color 0.3s;
     }
@@ -988,7 +990,7 @@ $textCub: cubic-bezier(.48,.43,.7,2.5);
     &:hover {
       &:before,
       &:after {
-        background: $lightBlue;
+        background: black;
       }
     }
 

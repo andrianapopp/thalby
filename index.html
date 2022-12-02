@@ -19,84 +19,88 @@
 <!--header-->
 
 
-<nav class="nav">
-    <input type="checkbox" class="nav__cb" id="menu-cb"/>
-    <div class="nav__content">
-        <ul class="nav__items">
-            <li class="nav__item">
-        <span class="nav__item-text">
-          Home
-        </span>
-            </li>
-            <li class="nav__item">
-        <span class="nav__item-text">
-          Works
-        </span>
-            </li>
-            <li class="nav__item">
-        <span class="nav__item-text">
-          About
-        </span>
-            </li>
-            <li class="nav__item">
-        <span class="nav__item-text">
-          Contact
-        </span>
-            </li>
+
+
+<nav role="navigation">
+    <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+            <a class="list_a" href="#"><li>Shop</li></a>
+            <a class="list_a" href="#"><li>Collections</li></a>
+            <a class="list_a" href="#"><li>Try a Free Guide</li></a>
+            <a class="list_a" href="#"><li>Stories</li></a>
+<!--            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>-->
         </ul>
     </div>
-    <label class="nav__btn" for="menu-cb"></label>
 </nav>
 
 
 
-
-<!--<header>-->
-<!--    <div class="header">-->
-<!--        <ul class="head_list">-->
-<!--            <li style="margin-right: 28px"  class="list">-->
-<!--                <a class="list_a" href="#">-->
-<!--                    Shop-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li style="margin-right: 28px" class="list">-->
-<!--                <a class="list_a" href="#">-->
-<!--                    Collections-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li style="margin-right: 28px" class="list">-->
-<!--                <a class="list_a" href="#">-->
-<!--                    Try a Free Guide-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li class="list">-->
-<!--                <a class="list_a" href="#">-->
-<!--                    Stories-->
-<!--                </a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--        <a class="logo" href="#">-->
-<!--            <img src="images/logo.svg">-->
-<!--        </a>-->
-<!--        <ul class="soc_net">-->
-<!--            <li style="padding: 18px 16px 18px 0">-->
-<!--                <a class="soc_a" href="#">-->
-<!--                    <img src="images/inst.svg" alt="instagram">-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li style="padding: 8px 9px 8px 0">-->
-<!--                <a class="soc_a" href="#">-->
-<!--                    <img src="images/serch.svg" alt="search">-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            <li style="padding: 5px 0 9px">-->
-<!--                <a class="soc_a" href="#">-->
-<!--                    <img src="images/bag.svg" alt="bag">-->
-<!--                </a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-<!--</header>-->
+<header>
+    <div class="header">
+        <ul class="head_list">
+            <li style="margin-right: 28px"  class="list">
+                <a class="list_a" href="#">
+                    Shop
+                </a>
+            </li>
+            <li style="margin-right: 28px" class="list">
+                <a class="list_a" href="#">
+                    Collections
+                </a>
+            </li>
+            <li style="margin-right: 28px" class="list">
+                <a class="list_a" href="#">
+                    Try a Free Guide
+                </a>
+            </li>
+            <li class="list">
+                <a class="list_a" href="#">
+                    Stories
+                </a>
+            </li>
+        </ul>
+        <a style="vertical-align:initial" class="logo" href="#">
+            <img src="images/logo.svg">
+        </a>
+        <ul class="soc_net">
+            <li id="inst">
+                <a class="soc_a" href="#">
+                    <img src="images/inst.svg" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a id="search" class="soc_a" href="#">
+                    <img id="serch" src="images/serch.svg" alt="search">
+                </a>
+            </li>
+            <li id="sitka">
+                <a class="soc_a" href="#">
+                    <img src="images/bag.svg" alt="bag">
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
 
 
 <!--Fall_deeper_in_love-->
@@ -305,7 +309,8 @@
             <h4>
                 Camille Muller,<br>Landscape Designer, France
             </h4>
-            <a href="#">Discover</a>
+            <a class="discover_but"
+               style="margin-top: 44px; margin-bottom: 52px" href="#">Discover</a>
         </div>
         <img class="sw" src="images/Rectangle%20(4).svg" alt="#">
         <div class="column2">
@@ -313,7 +318,7 @@
             <h4>
                 Sonia Kowalewski,<br>Witch, Germany
             </h4>
-            <a href="#">Discover</a>
+            <a class="discover_but" href="#">Discover</a>
         </div>
         <img class="thw" src="images/Rectangle%20(5).svg" alt="#">
         <div class="column3">
@@ -321,7 +326,7 @@
             <h4>
                 Lilly Stoephasius,<br>Skateboarder, Germany
             </h4>
-            <a href="#">Discover</a>
+            <a class="discover_but" href="#">Discover</a>
         </div>
     </div>
 </section>
@@ -342,11 +347,14 @@
             <input class="inputs_footer" name="first_name" type="text" placeholder="First Name" id="first_name">
             <input class="inputs_footer" name="last_name" type="text" placeholder="Last Name" id="last_name">
         </div>
-        </div>
         <input name="email" type="email" placeholder="Email" id="email">
-        <a id="subscribe" href="#">
-            Subscribe
-        </a>
+        </div>
+<!--        <input name="email" type="email" placeholder="Email" id="email">-->
+        <div style="display: flex; justify-content: center; margin-top: 16px; margin-bottom: 88px;">
+            <a id="subscribe" href="#">
+                Subscribe
+            </a>
+        </div>
     </div>
 </section>
 

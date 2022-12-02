@@ -9,7 +9,7 @@
 .header {
   display: flex;
   max-width: 1068px;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin: auto;
   position: relative;
 }
@@ -18,6 +18,13 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
+  position: absolute;
+  left: 0%;
+}
+@media screen and (max-width: 767px) {
+  .head_list {
+    top: -300px;
+  }
 }
 
 .list {
@@ -41,10 +48,38 @@
   position: absolute;
   left: 47%;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    left: 40%;
+  }
+}
 
 .soc_net {
   display: flex;
   list-style: none;
+}
+
+#inst {
+  padding: 18px 16px 18px 0;
+}
+@media screen and (max-width: 767px) {
+  #inst {
+    padding: 18px 5px 18px 0;
+  }
+}
+
+#serch {
+  padding: 10px 9px 8px 0;
+}
+@media screen and (max-width: 767px) {
+  #serch {
+    padding: 10px 0 8px 0;
+  }
+}
+
+#sitka {
+  padding: 5px 0 9px;
+  margin-top: 3px;
 }
 
 .humanity h1 {
@@ -100,10 +135,20 @@
   max-width: 1068px;
   margin: auto;
 }
+@media screen and (max-width: 767px) {
+  .deeper {
+    display: unset;
+  }
+}
 
 .humanity {
   max-width: 534px;
   padding: 90px 0 90px;
+}
+@media screen and (max-width: 767px) {
+  .humanity {
+    padding: 90px 0 0 0;
+  }
 }
 
 .in_love {
@@ -118,6 +163,11 @@
   height: 100%;
   background-image: url(../images/fall_deeper.jpg);
   background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  #background_image {
+    position: unset;
+  }
 }
 
 /*<!--Our guides-->*/
@@ -179,6 +229,12 @@
   padding-bottom: 240px;
 }
 
+@media screen and (max-width: 767px) {
+  .best {
+    padding-bottom: 10px;
+  }
+}
+
 .best h1 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -194,6 +250,12 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .sellers {
+    flex-direction: column;
+  }
 }
 
 .pics {
@@ -242,6 +304,12 @@
   color: #d6b860;
 }
 
+@media screen and (max-width: 767px) {
+  .pics {
+    margin-bottom: 30px;
+  }
+}
+
 /*<!--People and Society-->*/
 .people_and {
   background-color: rgba(204, 204, 204, 0.3019607843);
@@ -254,9 +322,21 @@
   padding: 76px 0 51px;
 }
 
+@media screen and (max-width: 767px) {
+  .and_society {
+    flex-direction: column;
+  }
+}
+
 .and {
   max-width: 498px;
   padding: 62.95px 0 0 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .and {
+    padding: 62.95px 0 0 10px;
+  }
 }
 
 .and h1 {
@@ -309,6 +389,11 @@
   max-width: 513px;
   padding: 63.3px 50px 0 0;
   text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .heritage {
+    padding: 63.3px 15px 30px 0;
+  }
 }
 
 .heritage h1 {
@@ -421,6 +506,11 @@
   text-align: center;
   color: #000000;
 }
+@media screen and (max-width: 767px) {
+  .each {
+    padding: 163px 0 163px;
+  }
+}
 
 /*<!--Discover-->*/
 #col {
@@ -433,16 +523,28 @@
   max-width: 1068px;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .discover {
+    flex-direction: column;
+  }
+}
 
 .column1 {
   align-items: center;
   max-width: 288px;
+  margin: auto;
   /*position: relative;*/
 }
 
 .discover .fm {
   position: absolute;
   top: -47%;
+}
+@media screen and (max-width: 767px) {
+  .discover .fm {
+    position: unset;
+    margin-top: 50px;
+  }
 }
 
 .column1 p {
@@ -456,6 +558,11 @@
   color: #000000;
   max-width: 248px;
   padding-top: 198px;
+}
+@media screen and (max-width: 767px) {
+  .column1 p {
+    padding-top: 60px;
+  }
 }
 
 .column1 h4 {
@@ -492,6 +599,12 @@
   top: -47%;
   left: 37%;
 }
+@media screen and (max-width: 767px) {
+  .discover .sw {
+    position: unset;
+    margin-top: 30px;
+  }
+}
 
 .column2 {
   align-items: center;
@@ -511,6 +624,11 @@
   color: #000000;
   max-width: 248px;
   padding-top: 198px;
+}
+@media screen and (max-width: 767px) {
+  .column2 p {
+    padding-top: 40px;
+  }
 }
 
 .column2 h4 {
@@ -546,11 +664,25 @@
   top: -47%;
   right: 0%;
 }
+@media screen and (max-width: 767px) {
+  .discover .thw {
+    position: unset;
+    margin-top: 30px;
+  }
+}
+
+.discover_but {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+  margin-bottom: 52px;
+}
 
 .column3 {
   align-items: center;
   max-width: 288px;
   position: relative;
+  margin: auto;
 }
 
 .column3 p {
@@ -564,6 +696,12 @@
   color: #000000;
   max-width: 248px;
   padding-top: 198px;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .column3 p {
+    padding-top: 40px;
+  }
 }
 
 .column3 h4 {
@@ -627,6 +765,12 @@
   justify-content: space-between;
   padding-top: 26px;
 }
+@media screen and (max-width: 767px) {
+  .names {
+    display: flex;
+    margin: auto;
+  }
+}
 
 #first_name {
   box-sizing: border-box;
@@ -641,6 +785,11 @@
   font-size: 14px;
   line-height: 16px;
   color: #A0A0A0;
+}
+@media screen and (max-width: 767px) {
+  #first_name {
+    margin: auto;
+  }
 }
 
 #last_name {
@@ -657,6 +806,12 @@
   line-height: 16px;
   color: #A0A0A0;
 }
+@media screen and (max-width: 767px) {
+  #last_name {
+    margin: auto;
+    padding: 12px 0 11px 8px;
+  }
+}
 
 #email {
   box-sizing: border-box;
@@ -671,6 +826,13 @@
   line-height: 16px;
   color: #A0A0A0;
   width: 366px;
+}
+@media screen and (max-width: 767px) {
+  #email {
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+  }
 }
 
 #subscribe {
@@ -706,6 +868,12 @@
   max-width: 1068px;
   display: flex;
   margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .foot {
+    flex-direction: column;
+    margin-left: 20px;
+  }
 }
 
 #logo_white {
@@ -779,6 +947,11 @@
   display: flex;
   margin-top: 51px;
 }
+@media screen and (max-width: 767px) {
+  .about_contact {
+    margin-left: 0;
+  }
+}
 
 .paddiing {
   padding-top: 12px;
@@ -792,16 +965,6 @@
 
 html, body {
   height: 35%;
-}
-
-body:before, body:after {
-  content: "";
-  display: block;
-  height: 100%;
-  background: white;
-}
-body:after {
-  background: white;
 }
 
 /* MAIN VARIABLES FOR CUSTOMIZATION */
@@ -818,6 +981,12 @@ body:after {
   border-radius: 5px;
   transform: translate3d(-50%, 0, 0);
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    display: inline-block;
+    top: 5%;
+  }
 }
 .nav__cb {
   z-index: -1000;
